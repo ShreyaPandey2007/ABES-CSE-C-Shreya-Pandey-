@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Bus Seat Booking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f7fa;
+      color: #111;
+    }
+
+    nav {
+      background: #7f7f7f;
+      color: #fff;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav h1 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .wrap {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 12px;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: center; 
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 14px;
+      width: 300px;
+      box-shadow: 0 2px 6px rgba(0,0,0,.08);
+    }
+
+    .card h2 {
+      margin: 0 0 12px 0;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    label {
+      display: block;
+      margin: 8px 0 4px;
+      font-size: 14px;
+    }
+
+    select {
+      width: 100%;
+      padding: 8px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    fieldset {
+      border: 0;
+      padding: 0;
+      margin: 8px 0;
+    }
+
+    fieldset label {
+      margin-right: 12px;
+      font-size: 14px;
+    }
+
+    .actions {
+      text-align: center;
+      margin-top: 12px;
+    }
+
+    button {
+      background: #f0b66a;
+      border: 0;
+      padding: 10px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .bus-photo {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>BUS SEAT BOOK</h1>
+  </nav>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>Book Your Seat</h2>
+      <form>
+        <fieldset>
+          <legend><b>Bus type</b></legend>
+          <label><input type="radio" name="busType" value="ac" checked> AC</label>
+          <label><input type="radio" name="busType" value="non-ac"> Non-AC</label>
+        </fieldset>
+
+        <fieldset>
+          <legend><b>Payment mode</b></legend>
+          <label><input type="radio" name="payment" value="credit" checked> Credit Card</label>
+          <label><input type="radio" name="payment" value="debit"> Debit Card</label>
+          <label><input type="radio" name="payment" value="netbank"> Net Banking</label>
+        </fieldset>
+
+        <label for="city">Select city</label>
+        <select id="city" name="city">
+          <option value="">Select your city</option>
+          <option value="sultanpur">Sultanpur</option>
+          <option value="other">Other</option>
+        </select>
+
+        <div class="actions">
+          <button type="submit">THANKS FOR BOOKING</button>
+        </div>
+      </form>
+    </section>
+
+    <img src="bus.jpg" alt="Bus" class="bus-photo">
+  </main>
+</body>
+</html>
