@@ -6,11 +6,27 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+        body{
+            background-color: rgb(240, 240, 240);
+        }
+        .card{
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            transition: 0.3s;
+            background-color: white;
+      }
         .cardmain{
             display: flex;
             margin: 2rem;
             position:space-evenly;
             gap: 2rem;
+            justify-content: space-evenly;
+            
             
         }
         .card:hover{
@@ -22,7 +38,7 @@
     
 </head>
 <body>
-    <h1>Welcome to Shreya's food court</h1>
+    <h1 style="text-align: center;">Welcome to Shreya's food court</h1>
     <div class="cardmain">
         <div class="card" style="width: 18rem;">
        <img src="OIP.jpg" class="card-img-top" alt="...">
