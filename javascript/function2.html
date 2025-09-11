@@ -5,23 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #sh{
-            border:2px solid black;
-            height: 200px;
-            width: 200px;
-        }
+        
     </style>
 </head>
-<body>
-    <div id="sh">
-        <button onclick="myFunction()">click me</button>
-        <p id="demo"></p>
-    </div>
+<body id="demo">
+    <button onclick="red()">red</button>
+    <button onclick="green()">green</button>
+    <button onclick="blue()">blue</button>
     <script>
-        function myFunction() {
-            document.getElementById("demo").innerHTML = "Hey Shreya";
+        function red(){
+            document.getElementById("demo").style.backgroundColor="red";
+
+        }
+        function green(){
+            document.getElementById("demo").style.backgroundColor="green";
+
+        }
+        function blue(){
+            document.getElementById("demo").style.backgroundColor="blue";
+
         }
     </script>
+    
 
 </body>
 </html>
