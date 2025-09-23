@@ -1,0 +1,89 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment</title>
+    <style>
+        .demo{
+            background-color: aquamarine;
+            border:2px solid black;
+
+            height:300px;
+            width:300px;
+            
+        }
+        .header{
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 5px;
+            
+        }
+        img{
+            border-radius: 50%;
+        }
+        .count{
+            font-size: 50px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .footer{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 30px;
+        }
+        span{
+            margin-right: 50px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="bada" >
+        <div class="demo">
+
+        <div class ="header">
+            <img src="icon.jpg" alt="" height="50px" width="50px">
+            <span>Counter App</span>
+        </div>
+        <div class="main">
+            
+            <p class="count" >0</p>   
+
+        </div>
+        <div class="footer">
+            <button onclick="decrement()">-</button>
+            <button onclick="increment()">+</button>  
+        </div>
+        </div>
+        <!-- *********************************** -->
+    </div>
+
+    
+    <script>
+        var count=0;
+        function increment(){
+            if( count>=10){
+                alert("maximum limit reached");
+                return;
+            }
+            count++;
+            document.querySelector(".count").innerHTML=count;
+
+        }
+        function decrement(){
+            if( count<=0){
+                alert("minimum limit reached");
+                return;
+            }
+            count--;
+            document.querySelector(".count").innerHTML=count;
+        }
+    </script>
+    
+</body>
+</html>
