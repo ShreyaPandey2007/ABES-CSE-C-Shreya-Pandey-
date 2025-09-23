@@ -1,0 +1,48 @@
+application={
+  "phones": [
+    {
+      "title": "Samsung Galaxy S23",
+      "description": "A flagship phone with AMOLED display and great performance."
+    },
+    {
+      "title": "Poco X5 Pro",
+      "description": "A budget-friendly phone with powerful Snapdragon processor."
+    },
+    {
+      "title": "Galaxy A54",
+      "description": "Mid-range smartphone with long battery life."
+    }
+  ],
+  "tvs": [
+    {
+      "title": "Sony Bravia 55”",
+      "description": "A premium 4K UHD TV with HDR support."
+    },
+    {
+      "title": "Samsung QLED 65”",
+     
+      "description": "Immersive QLED TV with vibrant colors."
+    },
+    {
+      "title": "LG OLED 48”",
+     
+      "description": "Ultra-slim design with perfect blacks."
+    }
+  ],
+  "games": [
+    {
+      "title": "God of War: Ragnarok",
+      
+      "description": "An action-packed adventure game set in Norse mythology."
+    },
+    {
+      "title": "FIFA 24",
+      "description": "Latest football game with realistic gameplay."
+    },
+    {
+      "title": "Call of Duty: Modern Warfare II",
+      
+      "description": "First-person shooter with thrilling missions."
+    }
+  ]
+}
