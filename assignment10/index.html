@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        body{
+            font-family: 'Roboto', sans-serif;
+            background-color: rgb(240, 236, 236);
+        }
+        .main-cointainer{
+            width: 50%;
+            margin: auto;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 5px 5px 5px grey;
+            background-color: white;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        button{
+            margin:10px;
+            cursor: pointer;
+        }
+        .p1,.p2,.p3,.p11{
+            display: none;
+            font-size: 20px;
+            margin-left: 20px;
+            text-align: left;
+        }
+        .p11 h3{
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body style="text-align: center;">
+    <div class="main-cointainer">
+        <h1>TO DO LIST</h1>
+
+        <div>
+            <button type="button" class="btn-primary btn-lg">Play</button>
+            <button type="button" class="btn1">+</button>
+            <p class="p1">Lets play games</p>
+        </div>
+
+        <div>
+            <button type="button" class="btn btn-primary btn-lg">Go to Market</button>
+            <button type="button" class="btn2">+</button>
+            <p class="p2">Buy groceries</p>
+        </div>
+
+        <div>
+            <button type="button" class="btn btn-primary btn-lg">Go to College</button>
+            <button type="button" class="btn3">+</button>
+            <p class="p3">Attend classes</p>
+        </div>
+
+        <button type="button" class="showAll btn btn-primary btn-sm">Show All List</button>
+
+        <div class="p11">
+            <h3>Completed Tasks:</h3>
+            1. Lets play games<br>
+            2. Buy groceries<br>     
+            3. Attend classes<br>
+        </div>
+    </div>
+
+    <script>
+        // Toggle function
+        function toggleDisplay(selector) {
+            let element = document.querySelector(selector);
+            if (element.style.display === "block") {
+                element.style.display = "none";
+            } else {
+                element.style.display = "block";
+            }
+        }
+
+        // + buttons toggle
+        document.querySelector(".btn1").addEventListener("click", function(){
+            toggleDisplay(".p1");
+        });
+
+        document.querySelector(".btn2").addEventListener("click", function(){
+            toggleDisplay(".p2");
+        });
+
+        document.querySelector(".btn3").addEventListener("click", function(){
+            toggleDisplay(".p3");
+        });
+
+        // Show all button
+        document.querySelector(".showAll").addEventListener("click", function(){
+            document.querySelector(".p1").style.display="block";
+            document.querySelector(".p2").style.display="block";
+            document.querySelector(".p3").style.display="block";
+            document.querySelector(".p11").style.display="block";
+        });
+    </script>
+</body>
+</html>
