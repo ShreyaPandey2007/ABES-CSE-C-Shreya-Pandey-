@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    <script>
+        const mypro=new Promise((resolve,reject)=>{
+            const pass="sadjnf";
+            if(pass.length>8){
+                resolve("password length is ok")
+            }
+            else{
+                reject("opps")
+            }
+        })
+        mypro.then((msg)=>{
+            document.write(msg);
+            console.log(msg)
+        }).catch((err)=>{
+            document.write(err)
+        })
+    </script> 
+</body>
+</html>

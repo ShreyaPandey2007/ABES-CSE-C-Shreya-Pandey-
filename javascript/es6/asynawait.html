@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    
+</head>
+<body>
+    <script>
+     async    function s(){
+        let promise=new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve("done")
+            },2000)
+        })
+        let res=await promise;
+        alert(res);
+
+    }
+     s()
+
+    </script>
+   
+    
+</body>
+</html>
