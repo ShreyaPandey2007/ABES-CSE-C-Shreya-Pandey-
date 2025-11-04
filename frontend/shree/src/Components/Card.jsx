@@ -1,10 +1,15 @@
 import React from 'react'
- import './Card.css'
-const Card = () => {
+
+const Card = (props) => {
   return (
     <div id="card">
-        <h1>hi there</h1>
-        <img src="https://tse1.mm.bing.net/th/id/OIP.2SvXabEg_hng8k3yaxDtSQHaHG?pid=Api&P=0&h=180" alt="" height={100} width={100} />
+        <div id="first">
+            <img src={props.src} alt=""  height={40} width={40}/>
+        </div>
+        <div id="second">
+            <h1>{props.name}</h1>
+        </div>
+
     </div>
   )
 }
