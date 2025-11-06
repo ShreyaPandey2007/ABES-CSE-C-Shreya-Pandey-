@@ -8,7 +8,7 @@ const Book = (props) => {
         <h3>{props.title}</h3>
         <h3>{props.price}</h3>
         <button></button>
-        but
+        
     </div>
   )
 }
